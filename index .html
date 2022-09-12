@@ -4,13 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
-      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <title>Tugas Table dewi srikandi</title>
+    <title>Tugas Table Dewi srikandi</title>
   </head>
   <style>
     a {
@@ -33,7 +27,7 @@
     }
 
     td {
-      border: 1px solid black;
+      border: 1px solid rgb(0, 0, 0);
       text-align: left;
       padding: 8px;
       /* background-color: bisque; */
@@ -53,14 +47,14 @@
     tr {
       background-color: bisque;
       transition: 0.2s;
-      background-color: rgb(255, 0, 170);
+      background-color: rgb(0, 255, 0);
     }
     tr:hover {
-      background-color: rgb(240, 251, 255);
+      background-color: azure;
     }
 
     tr:nth-child(even) {
-      background-color: #b0ec0b;
+      background-color: #0bddec;
       transition: 0.2s;
     }
     tr:nth-child(even):hover {
@@ -68,7 +62,7 @@
       color: aliceblue;
     }
     .delete {
-      background-color: rgb(0, 174, 255);
+      background-color: red;
       color: rgb(246, 242, 242);
       transition: 0.2s;
     }
@@ -78,8 +72,9 @@
     }
   </style>
   <body>
+    <a href="../index.html"><== Kembali</a>
     <h1>My Best 5 Friends</h1>
-    <h2>dewi srikandi wiharta</h2>
+    <h2>Dewi srikandi wiharta</h2>
     <h2>41215996</h2>
 
     <table>
@@ -89,76 +84,36 @@
         <th>Alamat</th>
         <th>Aksi</th>
       </tr>
-      <tr id="baris__1">
+      <tr>
         <td>1</td>
-        <td class="nama">niko luqman hakim</td>
-        <td class="alamat">Indaramayu</td>
-        <td class="delete" id="delete__1">Hapus</td>
+        <td>Marsus Brahma Suzeta</td>
+        <td>Indaramayu</td>
+        <td class="delete">Hapus</td>
       </tr>
-      <tr id="baris__2">
+      <tr>
         <td>2</td>
-        <td class="nama">eva agustina</td>
-        <td class="alamat">Cirebon</td>
-        <td class="delete" id="delete__2">Hapus</td>
+        <td>andrian saputra</td>
+        <td>Cirebon</td>
+        <td class="delete">Hapus</td>
       </tr>
-      <tr id="baris__3">
+      <tr>
         <td>3</td>
-        <td class="nama">mira agustina</td>
-        <td class="alamat">cirebon</td>
-        <td class="delete" id="delete__3">Hapus</td>
+        <td>ajis </td>
+        <td>majalengka</td>
+        <td class="delete">Hapus</td>
       </tr>
-      <tr id="baris__4">
+      <tr>
         <td>4</td>
-        <td class="nama">Rizal Dwi Rizki</td>
-        <td class="alamat">Indaramayu</td>
-        <td class="delete" id="delete__4">Hapus</td>
+        <td>reno</td>
+        <td>cirebon</td>
+        <td class="delete">Hapus</td>
       </tr>
-      <tr id="baris__5">
+      <tr>
         <td>5</td>
-        <td class="nama">ade safitri</td>
-        <td class="alamat">dukupuntang</td>
-        <td class="delete" id="delete__5">Hapus</td>
+        <td>ade eka</td>
+        <td>sumber</td>
+        <td class="delete">Hapus</td>
       </tr>
     </table>
-    <script>
-      $(document).ready(function () {
-        //alert(0)
-        $('.nama').click(function () {
-          //alert(3)
-          let penyebut = $(this).text();
-          // alert(isi);
-          let hasil = prompt('Anda yakin mau mengganti Nama ini?', penyebut);
-          if (!hasil) return;
-          {
-            //alert(hasil)
-            $(this).text(hasil);
-          }
-        });
-
-        $('.alamat').click(function () {
-          //alert(3)
-          let penyebut = $(this).text();
-          // alert(isi);
-          let hasil = prompt('Anda yakin mau mengganti Alamat ini?', penyebut);
-          if (!hasil) return;
-          {
-            //alert(hasil)
-            $(this).text(hasil);
-          }
-        });
-        $('.delete').click(function () {
-          // alert(1)
-          let serius = confirm('Anda yakin mau menghapus baris ini ?');
-          if (!serius) return;
-          let id = $(this).prop('id');
-          //alert(id);
-
-          let rid = id.split('__');
-          let baris_ke = rid[1];
-          //alert(baris__ke)
-          $('#baris__' + baris_ke).slideUp();
-        });
-      });
-    </script>
   </body>
 </html>
