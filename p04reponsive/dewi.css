@@ -1,0 +1,71 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(127, 150, 255);
+}
+.atas{
+  color: red;
+}
+h5 {
+  color: red;
+  text-align: left;
+}
+h5:hover {
+  color: black;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+select {
+  transition: 0.1s;
+}
+select:hover {
+  background-color: rgb(14, 238, 163);
+}
+option {
+  transition: 0.1s;
+}
+option:hover {
+  background-color: rgb(168, 40, 228);
+}
+input {
+  transition: 0.1s;
+}
+
+input:hover {
+  background-color: rgb(49, 97, 230);
+}
+textarea {
+  transition: 0.1s;
+}
+
+textarea:hover {
+  background-color: rgb(15, 65, 158);
+}
+button {
+  margin-top: 20px;
+  width: 200px;
+  height: 30px;
+  background-color: rgb(23, 254, 38);
+cursor: pointer;
+}
+button:hover {
+  background-color: red;
+  color: aliceblue;
+}
+@media only screen and (max-width: 600px){
+  body{
+    font-size: 10px;
+
+  }
+  .tab{
+    margin-left: -100px;
+  }
+  .atas{
+    font-size: 11px;
+  }
+}
